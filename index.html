@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/f9233fdd12.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/assets/index.js" integrity="anonymous"></script>
     <title>Document</title>
   </head>
   <body>
@@ -58,7 +59,7 @@
             <p>Check-in</p>
             <p>24 July 2022</p>
           </div>
-          <div class="icon-card"><i class="fa-solid fa-calendar"></i></div>
+          <div class="icon-card"><i class="fa-solid fa-chevron-down"></i></div>
         </div>
         <div class="card">
           <div class="text-card">
@@ -101,9 +102,18 @@
             </p>
             <p>79.000</p>
           </div>
-          <button class="more-info">More Info</button>
+          <button class="more-info" onclick="change()">More Info</button>
         </div>
       </div>
     </div>
+    <!-- <script>
+      var hero = document.querySelector(".hero-title");
+      hero.style.color = "#ffffff";
+
+      function change() {
+        window.alert("Dont change me pls ")
+        // hero.style.color = "blue";
+      }
+    </script> -->
   </body>
 </html>

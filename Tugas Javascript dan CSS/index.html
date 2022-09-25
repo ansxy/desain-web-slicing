@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./assets/index.js"></script>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <title>Form Pembuatan KTP</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sectionOne">
+        <p>
+          Tugas Javascript dan Css Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Qui aliquid iusto quaerat facilis minus eius
+          corrupti hic soluta? Consectetur nisi labore amet recusandae delectus
+          neque eum temporibus alias voluptates laudantium?
+        </p>
+      </div>
+      <div class="sectionTwo">
+        <form action="">
+          <div class="from-container">
+            <div class="form-container" style="justify-content: center">
+              <h1>MASUKAN DATA DIRI ANDA</h1>
+            </div>
+            <div class="form-item">
+              <input
+                type="text"
+                id="name"
+                placeholder="Nama"
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+                required
+              />
+            </div>
+            <div class="form-item">
+              <input
+                type="text"
+                id=""
+                placeholder="Tempat Lahir"
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+                required
+                style="width: 20vw"
+              />
+              <input
+                type="date"
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+                required
+              />
+            </div>
+            <div class="form-container">
+              <select
+                name=""
+                id="jenis-kelamin"
+                class="form-select"
+                required
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+              >
+                <option value="" selected disabled>Jenis Kelamin</option>
+                <option value="lakilaki">Laki - Laki</option>
+                <option value="perempuan">Perempuan</option>
+              </select>
+              <select
+                name=""
+                id="agama"
+                class="form-select"
+                required
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+              >
+                <option value="" selected disabled>Agama</option>
+                <option value="islam">Islam</option>
+                <option value="kristen">Kristen</option>
+                <option value="buddha">Buddha</option>
+                <option value="hindu">Hindu</option>
+                <option value="islam">Konghuchu</option>
+                <option value="kristen">Kristen</option>
+              </select>
+              <div class="status">
+                <label for=""
+                  ><input
+                    type="radio"
+                    checked
+                    value="menikah"
+                    name="radio"
+                  />Sudah Menikah</label
+                >
+                <label for=""
+                  ><input
+                    type="radio"
+                    value="belum-menikah"
+                    name="radio"
+                  />Belum Menikah</label
+                >
+              </div>
+            </div>
+            <div class="form-container">
+              <select
+                name=""
+                id="golonganDarah"
+                class="form-select"
+                required
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+              >
+                <option value="" selected disabled>Golonga Darah</option>
+                <option value="a">A</option>
+                <option value="ab">AB</option>
+                <option value="b">B</option>
+                <option value="o">O</option>
+              </select>
+              <select
+                name=""
+                id="pekerjaan"
+                class="form-select"
+                required
+                oninvalid="invalid(this)"
+                onchange="validate(this)"
+              >
+                <option value="" selected disabled>Pekerjaan</option>
+                <option value="swasta">Swasta</option>
+                <option value="pegawai-negri">Pegawai Negri</option>
+                <option value="buruh">Buruh</option>
+              </select>
+              <div class="status">
+                <label for=""
+                  ><input
+                    type="radio"
+                    checked
+                    value="WNI"
+                    name="WNI"
+                  />WNI</label
+                >
+                <label for=""
+                  ><input type="radio" value="WNA" name="WNA" />WNA</label
+                >
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="form-item">
+                <input
+                  type="text"
+                  id=""
+                  placeholder="Alamat"
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                  required
+                  style="width: 23vw; height: 12vh"
+                />
+              </div>
+
+              <div
+                class="form-item"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: space-between;
+                "
+              >
+                <input
+                  type="text"
+                  id=""
+                  placeholder="RT"
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                  required
+                  style="width: 10vw"
+                />
+                <input
+                  type="text"
+                  id=""
+                  placeholder="RW"
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                  required
+                  style="width: 10vw"
+                />
+              </div>
+            </div>
+            <div class="form-container">
+              <div class="form-item">
+                <select
+                  name="Provinsi"
+                  class="form-select"
+                  id="form-provinsi"
+                  required
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                >
+                  <option value="" selected disabled>Pilih Provinsi</option>
+                  <option value="11">Provinsi 1</option>
+                  <option value="22">Provinsi 2</option>
+                  <option value="33">Provinsi 3</option>
+                  <option value="44">Provinsi 4</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <select
+                  name="Provinsi"
+                  class="form-select"
+                  id="form-kabupaten"
+                  required
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                >
+                  <option value="" selected disabled>Pilih Kabupaten</option>
+                  <option value="11">Provinsi 1</option>
+                  <option value="22">Provinsi 2</option>
+                  <option value="33">Provinsi 3</option>
+                  <option value="44">Provinsi 4</option>
+                </select>
+              </div>
+              <div class="form-container">
+                <select
+                  name="Provinsi"
+                  class="form-select"
+                  id="form-kota"
+                  required
+                  oninvalid="invalid(this)"
+                  onchange="validate(this)"
+                >
+                  <option value="" selected disabled>Pilih Kota</option>
+                  <option value="11">Provinsi 1</option>
+                  <option value="22">Provinsi 2</option>
+                  <option value="33">Provinsi 3</option>
+                  <option value="44">Provinsi 4</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-container">
+              <button class="form-button">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

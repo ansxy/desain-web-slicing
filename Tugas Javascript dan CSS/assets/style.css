@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Reset CSS */
+/* CSS */
+:root {
+  --main-color: #080809;
+  --secondary-color: #2b3145;
+  --third-color: #3f4044;
+  --text-color: #e7e7ea;
+  --desc-color: #9e9ea0;
+  --placeholder-color: #707382;
+
+  --main-font: "Source Sans Pro ", sans-serif;
+  --secondary-font: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--text-color);
+  font-family: var(--main-font);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionOne {
+  display: flex;
+  width: 20vw;
+  height: 100vh;
+  color: var(--text-color);
+  align-items: center;
+  background-color: var(--main-color);
+}
+.sectionTwo {
+  display: flex;
+  width: 80vw;
+  height: 100vh;
+  color: var(--text-color);
+  align-items: center;
+  justify-content: center;
+  border-left: 2px solid var(--third-color);
+  background-color: var(--secondary-color);
+}
+input[type="text"] {
+  width: 33vw;
+  box-sizing: border-box;
+  margin: 8px 0;
+
+  border-radius: 10px;
+  padding: 12px 24px;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.form-button {
+  background-color: #5e6f92;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.form-select {
+  width: 10vw;
+  border: none;
+  margin: 8px 0;
+  padding: 10px 24px;
+  border-radius: 10px;
+  /* margin-bottom: 10px; */
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+input[type="date"] {
+  width: 10vw;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 24px;
+  margin-bottom: 8px;
+}
+
+.status {
+  display: flex;
+  flex-direction: column;
+  width: 10vw;
+}
+input[type="radio"] {
+  margin: 8px 0;
+  margin-right: 20px;
+}
+
+.form-button:hover {
+  background-color: var(--third-color);
+}
