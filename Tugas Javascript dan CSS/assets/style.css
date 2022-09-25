@@ -129,6 +129,8 @@ table {
 }
 /* Reset CSS */
 /* CSS */
+
+/* Warna & Font yang digunakan agar memudahkanya digunakan berulangkali*/
 :root {
   --main-color: #080809;
   --secondary-color: #2b3145;
@@ -146,11 +148,13 @@ body {
   font-family: var(--main-font);
 }
 
+/* Membuat container utama dengan display flex dengan flex directionya ke arah baris  */
 .container {
   display: flex;
   flex-direction: row;
 }
 
+/* Membagi 2 section pada container */
 .sectionOne {
   display: flex;
   width: 20vw;
@@ -169,20 +173,24 @@ body {
   border-left: 2px solid var(--third-color);
   background-color: var(--secondary-color);
 }
+
+/* Untuk inputan dengan tipe text akan diberikan css dibawahini  */
 input[type="text"] {
   width: 33vw;
   box-sizing: border-box;
   margin: 8px 0;
-
   border-radius: 10px;
   padding: 12px 24px;
 }
+/* Menghilangkan panah pada select  */
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
   text-indent: 1px;
   text-overflow: "";
 }
+
+/* css dengan class form-button */
 .form-button {
   background-color: #5e6f92;
   border: none;
@@ -192,6 +200,7 @@ select {
   border-radius: 10px;
 }
 
+/* css dengan class form-select */
 .form-select {
   width: 10vw;
   border: none;
@@ -201,6 +210,7 @@ select {
   /* margin-bottom: 10px; */
 }
 
+/* css dengan class form-container */
 .form-container {
   display: flex;
   justify-content: space-between;
@@ -210,6 +220,7 @@ h1 {
   font-size: xx-large;
 }
 
+/* Untuk inputan dengan tipe date akan diberikan css dibawahini  */
 input[type="date"] {
   width: 10vw;
   border: none;
@@ -223,11 +234,14 @@ input[type="date"] {
   flex-direction: column;
   width: 10vw;
 }
+
+/* Untuk inputan dengan tipe radio akan diberikan css dibawahini  */
 input[type="radio"] {
   margin: 8px 0;
   margin-right: 20px;
 }
 
+/* Memberikan effect ketika hover atau mengarahkan pointer mouse ke button  */
 .form-button:hover {
   background-color: var(--third-color);
 }
